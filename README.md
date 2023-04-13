@@ -5,4 +5,4 @@ Distributed MVC (Model-View-Controller) architecture is a software design patter
 ## Task
   my objective is to build such architecture using VirtualBox by creating several virtual machines; one for the [HTTP server](https://fr.wikipedia.org/wiki/Serveur_web) and another for the database server.
 ## Architecture
-  ![MVC Architecture](images/mvc.jpg)
+  ![MVC Architecture](images/mvc-architecture.png)
