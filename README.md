@@ -10,7 +10,7 @@ Distributed MVC (Model-View-Controller) architecture is a software design patter
   ![MVC Architecture](images/mvc-architecture.png)
 ## Requirement 
 
-* I assume you have VirtualBox Installed and you are comfortable creating virtual machines note in this repos we are going to work with ubuntu server machines ([link to download ISO image](https://ubuntu.com/download/server)) not ubuntu Desktop.
+* I assume you have VirtualBox Installed and you are comfortable creating virtual machines. *Note* that in this repos we are going to work with ubuntu server machines ([link to download ISO image](https://ubuntu.com/download/server)) not ubuntu Desktop.
 * the host OS doesn't matter in our case. I have Windows as host OS, Linux and MacOs are fine too.
 ## Configuration
 
