@@ -6,3 +6,6 @@ Distributed MVC (Model-View-Controller) architecture is a software design patter
   my objective is to build such architecture using VirtualBox by creating several virtual machines; one for the [HTTP server](https://fr.wikipedia.org/wiki/Serveur_web) and another for the database server.
 ## Architecture
   ![MVC Architecture](images/mvc-architecture.png)
+## Requirement 
+* I assume you have VirtualBox Installed and you are comfortable creating virtual machines note in this repos we are going to work with ubuntu server machines ([link to download ISO image](https://ubuntu.com/download/server)) not ubuntu Desktop.
+* the host OS doesn't matter in our case. I have Windows as host OS, Linux and MacOs are fine too.
