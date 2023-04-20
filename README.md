@@ -12,7 +12,7 @@ Distributed MVC (Model-View-Controller) architecture is a software design patter
 
 * I assume you have VirtualBox Installed and you are comfortable creating virtual machines. *Note* that in this repos we are going to work with ubuntu server machines ([link to download ISO image](https://ubuntu.com/download/server)) not ubuntu Desktop.
 * the host OS doesn't matter in our case. I have Windows as host OS, Linux and MacOs are fine too.
-## Configuration
+## Network Configuration
 
 1. create 2 Ubuntu server vms one for the **Apache** server, the other for the **MySql** server, you are free to give the hardware specs (e.g `20Go storage 2Go ram, ..`)
 2. create an internal network between the Apache server and MySql server.
