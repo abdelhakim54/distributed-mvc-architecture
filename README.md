@@ -22,3 +22,24 @@ Distributed MVC (Model-View-Controller) architecture is a software design patter
 4. use `ifconfig` (or alternatively`ifconfig -a`) command to view network interface configuration information. 
 5. in case where a network interface is missing an ip address, use the **dhcp** protocol to generate an ip address.
 > use `sudo dhcp <network-Interface-Name>`
+
+## Apache Sever Configuration
+
+1. install apache2 in your vm.
+> sudo apt update \
+  sudo apt install apache2
+
+to make sure apache is installed run `sudo systemctl start apache2`, enter password when prompted, then tested it out by typing in your ip address.
+
+2. configure the page to be loaded 
+
+    1. create a new directory inside `/var/www/` (name it *gci*)
+    2.  add a configuration file inside `/etc/apache2/sites-available` (name it *gci.conf*)
+    3. copy the content of the default configuration to our gci configuration file using`sudo cp 000-default.conf gci.conf`
+    4. create an `index.html` file inside `/var/www/` and add some content.
+    5. change to `/etc/apache2/sites-available` using the `cd` and run the following commands:
+    > `a2dissite 000-default.conf`\
+      `a2ensite gci.cong`\
+      `sudo systemctl reload apache2`
+
+Now you are able to connect to the apache server from your host OS; just tap the ip address of the apache server in your browser. 
