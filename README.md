@@ -49,17 +49,17 @@ At this stage, we will connect the apache server with the database server
 
 1. first run the command `sudo apt-get install mysql-client` in your apache server
 2. now go to the mysql server, and make sure that mysql is installed (if not run `sudo apt install mysql`)
-3.log in to mysql cli as a root (`sudo mysql`)
+3. log in to mysql cli as a root (`sudo mysql`)
 4. now, create a new mysql user, this user has to be accessed from the apache server in order to create the connection. \
-use the following command to achieve that\
+use the following command to achieve that :
 > CREATE USER "username"@"ip-address-of-apache-server" identified by "password";
 
-5. now grant this new user all the privileges using the following command
+5. now grant this new user all the privileges using the following command :
 > GRANT ALL PRIVILEGES  ON * . * TO "user-created"@"ip-address-of-apache";
  
 7. go back to your apache server and test your connection (use `mysql -u <userName> -h <mysql-ip-address> -p` enter password when prompted)
 8. On apache server , open `/etc/apache2/apache2.conf` file whith your favorite text editor .\
-add the following text and replace with your corresponding information\
+add the following text and replace with your corresponding information :
 ```
 <IfModule mod_dbd.c>
   		DBDriver mysql
